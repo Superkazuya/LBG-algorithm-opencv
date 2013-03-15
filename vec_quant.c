@@ -1,4 +1,4 @@
-/*Using hyperplanes(not sure if this is the proper term) to describle the boundary instead of caculate distance seprately*/
+/*Using hyperplanes(not sure if this is the proper term) to describle the boundary instead of caculate distance separately*/
 #include <stdlib.h>
 #include <stdio.h>
 #include "cv.h"
