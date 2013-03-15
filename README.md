@@ -40,3 +40,5 @@ Image Out:
 ![Alt text](img/long19.png "iteration 19")
 
 The program is not that generalized(for different dimension numbers etc).
+And the initial codebook is badly designed. I didn't check if it's indeed 
+uniform
