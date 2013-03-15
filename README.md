@@ -8,7 +8,8 @@ Terminal Out:
 * Time elapsed: 6090000 cycles.
 
 <pre>
-For a larger L(codebook size), the quality of the quantized image will improve of course, but the calculation will also take more time.
+For a larger L(codebook size), the quality of the quantized image will improve of course, 
+but the calculation will also take more time.
 </pre>
 
 The original image:
@@ -38,4 +39,4 @@ Image Out:
 ![Alt text](img/long18.png "iteration 18")
 ![Alt text](img/long19.png "iteration 19")
 
-
+The program is not that generalized(for different dimension numbers etc).
