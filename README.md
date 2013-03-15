@@ -3,11 +3,15 @@ LBG-algorithm-opencv
 
 Terminal Out:
 -------------
-*Initial d0 = 996229787
-*After 19 iterations, d0 = 1296780143, d1 = 1296435116.
-*Time elapsed: 6090000 cycles.
+* Initial d0 = 996229787
+* After 19 iterations, d0 = 1296780143, d1 = 1296435116.
+* Time elapsed: 6090000 cycles.
 
 For a larger L(codebook size), the quality of the quantized image will improve of course, but the calculation will also take more time.
+
+The original image:
+----------------
+![Alt text](Longcat.jpg "Original") 
 
 Image Out:
 -------------
@@ -32,6 +36,4 @@ Image Out:
 ![Alt text](img/long18.png "iteration 18")
 ![Alt text](img/long19.png "iteration 19")
 
-The original image:
-----------------
-![Alt text](Longcat.jpg "Original") 
+
