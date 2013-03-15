@@ -5,7 +5,7 @@
 #include "highgui.h"
 #include "time.h"
 
-#define SAVE_IMAGES_ON_THE_FLY 0
+#define SAVE_IMAGES_ON_THE_FLY 1
 
 #define PALETTE_L   128
 #define THRESHOLD_D 0.001
@@ -196,15 +196,16 @@ main(int argc, char** argv)
   init_codewords(); 
   update_partitions();
   d0 = calc_distortion();
-  printf("d0 = %d\n", d0);
+  printf("Initial d0 = %d\n", d0);
 
   int i = 0;
+  /*Timer Start Here*/
   time_t t = clock();
   while(abs(d-d0) >= THRESHOLD_D*d0)
   {
 #if SAVE_IMAGES_ON_THE_FLY
     update_image(image,quant_image);
-    char filename[11]; //8.3
+    char filename[13]; //8.3
     if(!sprintf(filename, "long%d.png", i) ||
     !cvSaveImage(filename, quant_image, 0))
       printf("Error occur while saving image.");
@@ -220,7 +221,7 @@ main(int argc, char** argv)
   printf("After %d iterations, d0 = %d, d1 = %d.\nTime elapsed: %d cycles.\n", i, d0, d, t);
   update_image(image,quant_image);
 #if SAVE_IMAGES_ON_THE_FLY
-  char filename[11]; //8.3
+  char filename[13]; 
   if(!sprintf(filename, "long%d.png", i) ||
   !cvSaveImage(filename, quant_image, 0))
     printf("Error occur while saving image.");
