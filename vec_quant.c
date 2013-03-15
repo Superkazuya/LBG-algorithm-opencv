@@ -36,7 +36,7 @@ void	      update_partitions();
 unsigned int 
 calc_distortion() //Not so generalized
 {
-  int color[CHANNEL_NUM];  //these 3 elements in color is actually r, g, b
+  int color[CHANNEL_NUM];  //these 3 elements in color are actually r, g, b
   int i;
   unsigned int dist = 0;
   for(color[0] = 0; color[0] < COLORS_IN_CHANNEL; color[0]++)
@@ -199,7 +199,7 @@ main(int argc, char** argv)
   printf("Initial d0 = %d\n", d0);
 
   int i = 0;
-  /*Timer Start Here*/
+  /*Timer Starts Here*/
   time_t t = clock();
   while(abs(d-d0) >= THRESHOLD_D*d0)
   {
